@@ -1,184 +1,607 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>성경 우상 리서치 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>성경 이방신 리서치 아카이브</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="홈으로">
-      <span class="brand-mark"></span>
-      <span>성경 우상 리서치 아카이브</span>
-    </a>
-    <nav class="nav-links" aria-label="주요 탐색">
-      <a href="#timeline">연대기</a>
-      <a href="#deities">우상 사전</a>
-      <a href="#sources">고고학 자료</a>
+    <!-- 배경 이미지 -->
+    <div class="hero-bg" style="background-image: url('assets/hero_bg_1778329968756.png');"></div>
+    <div class="hero-overlay"></div>
+
+    <header class="header">
+        <h1>성경 이방신 리서치 아카이브</h1>
+        <p>Ancient Archive of Biblical Idols & Deities</p>
+    </header>
+
+    <nav class="tabs-container">
+        <button class="tab-btn active" data-tab="timeline">🏛️ 연대기 타임라인</button>
+        <button class="tab-btn" data-tab="deity-db">👑 이방신 사전</button>
+        <button class="tab-btn" data-tab="sources">📜 고고학 사료실</button>
     </nav>
-    <a class="ghost-button" href="#query">자료 탐색</a>
-  </header>
 
-  <main id="top">
-    <section class="hero-section" aria-labelledby="hero-title">
-      <div class="hero-grid" aria-hidden="true">
-        <span></span><span></span><span></span><span></span>
-      </div>
-      <div class="hero-ring" aria-hidden="true"></div>
-      <p class="eyebrow">BIBLICAL IDOLS / FIELD INDEX</p>
-      <h1 id="hero-title">고대 종교 세계를 성경 본문 안에서 추적합니다</h1>
-      <p class="hero-copy">
-        창세기부터 요한계시록까지 등장하는 이방 신, 우상 숭배, 제국 종교의 흔적을
-        시대별 맥락과 고고학 자료로 정리한 어두운 연구형 홈페이지입니다.
-      </p>
-      <form id="query" class="search-panel" role="search">
-        <label class="sr-only" for="archive-query">자료 검색</label>
-        <input id="archive-query" type="search" placeholder="무엇을 알고 싶나요? 예: 바알, 몰렉, 에베소 아르테미스">
-        <button type="submit" aria-label="검색 실행">검색</button>
-      </form>
-      <div class="hero-metrics" aria-label="아카이브 요약">
-        <div><span>07</span><p>시대 구간</p></div>
-        <div><span>15</span><p>주요 우상</p></div>
-        <div><span>05</span><p>핵심 자료</p></div>
-      </div>
-    </section>
+    <main class="container">
+        <!-- ==================== 1. 연대기 타임라인 탭 ==================== -->
+        <div id="timeline" class="tab-content active">
+            <!-- Chapter 1 -->
+            <div class="accordion-item theme-amber">
+                <button class="accordion-header">
+                    <div class="chapter-info">
+                        <span class="chapter-number">Chapter 1</span>
+                        <h2 class="chapter-title">창세기 (Genesis) : 족장 시대와 메소포타미아의 가정신</h2>
+                    </div>
+                    <div class="icon-toggle">+</div>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h3>1. 시대적, 지리적 배경</h3>
+                            <p>창세기의 주요 배경은 고대 근동의 청동기 시대, 특히 기원전 2000년대 초반의 족장 시대입니다. 아브라함의 고향인 갈대아 우르(Ur)와 중간 기착지인 하란(Haran)은 고대 메소포타미아 문명의 중심지였으며, 다신교 숭배가 매우 발달한 지역이었습니다. 특히 달의 신(Sin)을 숭배하는 문화가 지배적이었습니다. 이러한 배경 속에서 여호와 하나님은 아브라함을 다신교적 환경에서 분리하여 가나안 땅으로 부르셨습니다.</p>
+                            
+                            <h3>2. 등장하는 주요 이방신: 드라빔 (Teraphim)</h3>
+                            <p>창세기에 명시적으로 이름을 드러내는 우상/이방신은 <strong>'드라빔(Teraphim)'</strong>입니다. 드라빔은 고대 근동에서 널리 숭배되던 가정 수호신의 일종으로, 주로 나무나 은, 금 등으로 작게 조각된 우상입니다.</p>
 
-    <section class="section-band" id="timeline" aria-labelledby="timeline-title">
-      <div class="section-heading">
-        <p class="eyebrow">TIMELINE</p>
-        <h2 id="timeline-title">성경 시대별 우상 숭배 흐름</h2>
-        <p>각 시대의 지리, 정치, 종교 환경을 한 화면에서 빠르게 비교할 수 있도록 정리했습니다.</p>
-      </div>
-      <div class="timeline-list">
-        <article class="timeline-item is-open">
-          <button class="timeline-toggle" type="button">
-            <span>01</span>
-            <strong>창세기: 메소포타미아와 족장 시대</strong>
-            <i>+</i>
-          </button>
-          <div class="timeline-content">
-            <p>아브라함의 고향 우르와 하란은 달신 숭배와 가족 수호신 전통이 강한 지역이었습니다. 데라빔은 단순한 장식품을 넘어 가문, 상속, 종교적 보호의 의미를 함께 지녔습니다.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <button class="timeline-toggle" type="button">
-            <span>02</span>
-            <strong>출애굽기-민수기: 애굽 신들과 광야의 유혹</strong>
-            <i>+</i>
-          </button>
-          <div class="timeline-content">
-            <p>출애굽 사건은 애굽의 신적 질서를 향한 심판으로 제시됩니다. 광야에서는 금송아지, 몰렉, 바알브올처럼 주변 민족의 풍요와 권력 숭배가 반복적으로 침투합니다.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <button class="timeline-toggle" type="button">
-            <span>03</span>
-            <strong>사사기-사무엘상: 바알, 아스다롯, 다곤</strong>
-            <i>+</i>
-          </button>
-          <div class="timeline-content">
-            <p>가나안 정착 이후 이스라엘은 농경 사회의 풍요 신앙과 계속 충돌했습니다. 바알과 아스다롯, 블레셋의 다곤은 생존과 전쟁의 문제를 둘러싼 영적 경쟁자로 등장합니다.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <button class="timeline-toggle" type="button">
-            <span>04</span>
-            <strong>분열 왕국-포로기: 혼합주의의 확대</strong>
-            <i>+</i>
-          </button>
-          <div class="timeline-content">
-            <p>아세라, 담무스, 하늘의 여왕 숭배는 성전과 일상 안으로 들어온 혼합주의를 보여줍니다. 예언자들은 이를 언약 배반과 사회적 붕괴의 신호로 해석했습니다.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <button class="timeline-toggle" type="button">
-            <span>05</span>
-            <strong>바벨론-페르시아: 제국 신들의 무게</strong>
-            <i>+</i>
-          </button>
-          <div class="timeline-content">
-            <p>벨과 느보는 바벨론 제국의 권위와 지식을 상징했습니다. 포로기의 예언은 거대한 제국의 신상도 결국 짐승의 등에 실려 가는 짐에 불과하다고 선언합니다.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <button class="timeline-toggle" type="button">
-            <span>06</span>
-            <strong>신약 시대: 헬라-로마 종교와 제국 숭배</strong>
-            <i>+</i>
-          </button>
-          <div class="timeline-content">
-            <p>에베소의 아르테미스, 디오스구로이, 로마 황제 숭배는 복음이 마주한 경제적, 정치적, 종교적 압력을 보여주는 대표 사례입니다.</p>
-          </div>
-        </article>
-      </div>
-    </section>
+                            <blockquote>"그 때에 라반이 양 털을 깎으러 갔으므로 라헬은 그의 아버지의 <strong>드라빔</strong>을 도둑질하고" (창세기 31:19)</blockquote>
+                            
+                            <h3>4. 역사 및 고고학적 교차 검증 (Nuzi Tablets)</h3>
+                            <p>기원전 15세기경의 누지 문서(Nuzi Tablets)에 따르면, 고대 메소포타미아 지역에서 드라빔을 소유한다는 것은 단순한 종교적 조각 소장을 넘어 '가문의 영적 계승권 및 가주의 상속권'을 상징하는 법적 효력을 가졌습니다. 라헬의 행동은 친정 가문에서의 경제적 권익 보장과 직결된 행위였습니다.</p>
+                            
+                            <h3>5. 신학적 및 구속사적 의미</h3>
+                            <p>이방 신상들을 버리고 자신을 정결하게 하라(창 35:2). 세속의 다신교적 보호망을 땅에 묻고, 오직 언약의 하나님만을 유일한 피난처로 삼는 이스라엘의 신앙적 순결이 어떻게 회복되어 가는지를 보여줍니다.</p>
+                        </div>
+                        <div class="content-image-wrapper">
+                            <img src="assets/teraphim_1778330319585.png" alt="드라빔 (Teraphim) 이미지" class="content-image">
+                            <div class="image-caption">고대 근동의 가정 수호신, 드라빔</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <section class="section-band" id="deities" aria-labelledby="deities-title">
-      <div class="section-heading compact">
-        <p class="eyebrow">DEITY DATABASE</p>
-        <h2 id="deities-title">주요 우상 사전</h2>
-      </div>
-      <div class="filter-row">
-        <button class="filter-btn is-active" type="button" data-filter="all">전체</button>
-        <button class="filter-btn" type="button" data-filter="old">구약</button>
-        <button class="filter-btn" type="button" data-filter="new">신약</button>
-      </div>
-      <div class="deity-grid">
-        <article class="deity-card" data-era="old">
-          <img src="assets/teraphim_1778330319585.png" alt="데라빔 이미지">
-          <div><p class="eyebrow">GENESIS</p><h3>데라빔</h3><p>가정 수호신이자 상속과 가문 정체성의 상징으로 이해되는 소형 우상.</p></div>
-        </article>
-        <article class="deity-card" data-era="old">
-          <img src="assets/molech_1778330364237.png" alt="몰렉 이미지">
-          <div><p class="eyebrow">WILDERNESS</p><h3>몰렉</h3><p>인신 제사 논쟁과 연결되는 암몬-가나안권의 위험한 숭배 전통.</p></div>
-        </article>
-        <article class="deity-card" data-era="old">
-          <img src="assets/dagon_1778330458623.png" alt="다곤 이미지">
-          <div><p class="eyebrow">PHILISTIA</p><h3>다곤</h3><p>블레셋의 대표 신으로, 언약궤 사건에서 무너지는 제국적 보호신.</p></div>
-        </article>
-        <article class="deity-card" data-era="old">
-          <img src="assets/tammuz_asherah.png" alt="담무스와 아세라 이미지">
-          <div><p class="eyebrow">KINGDOMS</p><h3>아세라 / 담무스</h3><p>풍요, 생명, 성전 혼합주의를 보여주는 후기 왕국 시대의 주요 사례.</p></div>
-        </article>
-        <article class="deity-card" data-era="old">
-          <img src="assets/bel_nebo.png" alt="벨과 느보 이미지">
-          <div><p class="eyebrow">BABYLON</p><h3>벨 / 느보</h3><p>바벨론 제국의 권력과 지식 질서를 대표하는 거대 도시 신앙.</p></div>
-        </article>
-        <article class="deity-card" data-era="new">
-          <img src="assets/artemis_ephesus.png" alt="에베소 아르테미스 이미지">
-          <div><p class="eyebrow">EPHESUS</p><h3>아르테미스</h3><p>신약의 선교 현장에서 경제권과 도시 정체성을 움직인 강력한 여신 숭배.</p></div>
-        </article>
-      </div>
-    </section>
+            <!-- Chapter 2 -->
+            <div class="accordion-item theme-gold">
+                <button class="accordion-header">
+                    <div class="chapter-info">
+                        <span class="chapter-number">Chapter 2</span>
+                        <h2 class="chapter-title">출애굽기 ~ 민수기 : 제국 종교에 대한 심판과 광야의 유혹</h2>
+                    </div>
+                    <div class="icon-toggle">+</div>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h3>1. 시대적, 지리적 배경</h3>
+                            <p>기원전 15~13세기 경의 출애굽 사건과 40년간의 광야 생활입니다. 이집트의 종교는 나일강, 태양, 동물 등을 신격화한 거대한 국가 지배 이데올로기였습니다. 광야에 진입한 이스라엘은 가나안 변방 족속들이 섬기던 파괴적이고 음란한 이방 신앙(몰렉, 그모스, 바알브올)의 유혹에 직면합니다.</p>
+                            
+                            <h3>2. 등장하는 주요 이방신</h3>
+                            <ul>
+                                <li><strong>이집트의 신들</strong>: 라(Ra, 태양신), 오시리스(생명과 명계의 신), 헤카트(개구리 머리 모양의 풍요의 여신) 등.</li>
+                                <li><strong>몰렉 (Molech)</strong>: 암몬과 가나안 일대의 인신 제사(아동 희생) 신.</li>
+                                <li><strong>그모스 (Chemosh)</strong>: 모압 족속의 국가신.</li>
+                                <li><strong>바알브올 (Baal-peor)</strong>: 성적인 제의와 연관된 모압 평지의 바알.</li>
+                            </ul>
 
-    <section class="section-band" id="sources" aria-labelledby="sources-title">
-      <div class="section-heading">
-        <p class="eyebrow">SOURCE MAP</p>
-        <h2 id="sources-title">본문과 교차 검증되는 자료</h2>
-        <p>성경 본문 밖에서 당시 종교 환경을 비추는 대표 자료를 간결하게 모았습니다.</p>
-      </div>
-      <div class="source-grid">
-        <article class="source-card"><span>BC 14-12C</span><h3>우가릿 문서</h3><p>바알, 아세라, 가나안 신화 구조를 이해하는 핵심 자료.</p></article>
-        <article class="source-card"><span>BC 840</span><h3>메사 석비</h3><p>모압 왕 메사와 그모스 숭배를 직접 언급하는 왕실 비문.</p></article>
-        <article class="source-card"><span>BC 9-8C</span><h3>쿤틸렛 아즈루드</h3><p>야훼 신앙과 아세라 관련 혼합주의 논쟁의 중심 자료.</p></article>
-        <article class="source-card"><span>AD 1-2C</span><h3>아시아 황제 숭배 비문</h3><p>요한계시록 배경의 정치 종교적 압력을 보여주는 흔적.</p></article>
-      </div>
-    </section>
-  </main>
+                            <blockquote>"내가 그 밤에 애굽 땅에 두루 다니며... 애굽의 모든 신에게 벌을 내리리라 나는 여호와라" (출애굽기 12:12)</blockquote>
+                            
+                            <h3>4. 역사 및 고고학적 교차 검증</h3>
+                            <p>일부 학자들은 몰렉이 특정한 신의 이름이 아니라 '희생 제사(Molk)' 자체를 가리키는 용어라고 주장합니다. 카르타고의 '토펫(Tophet)' 유적에서는 불에 탄 어린아이들의 유골이 다수 발굴되어 가나안 권역의 아동 희생을 입증합니다.</p>
 
-  <footer class="site-footer">
-    <p>성경 우상 리서치 아카이브</p>
-    <div>
-      <a href="#timeline">Timeline</a>
-      <a href="#deities">Database</a>
-      <a href="#sources">Sources</a>
-    </div>
-  </footer>
+                            <h3>5. 신학적 및 구속사적 의미</h3>
+                            <p>출애굽 사건은 제국이 구축한 다신교 세계관을 파쇄하는 우주적 해방 사건이었습니다. 하나님이 우상 숭배를 가증히 여기신 이유는, 그것이 생명을 파괴하고 인간의 존엄을 짓밟는 세속 지배 체계였기 때문입니다.</p>
+                        </div>
+                        <div class="content-image-wrapper">
+                            <img src="assets/molech_1778330364237.png" alt="몰렉 (Molech) 우상 이미지" class="content-image">
+                            <div class="image-caption">가나안의 잔혹한 인신 제사를 요구했던 몰렉(Molech)의 형상화</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <script src="script.js"></script>
+            <!-- Chapter 3 -->
+            <div class="accordion-item theme-rust">
+                <button class="accordion-header">
+                    <div class="chapter-info">
+                        <span class="chapter-number">Chapter 3</span>
+                        <h2 class="chapter-title">사사기 ~ 사무엘상 : 농경 사회의 유혹과 국가신의 충돌</h2>
+                    </div>
+                    <div class="icon-toggle">+</div>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h3>1. 시대적, 지리적 배경</h3>
+                            <p>가나안 땅 정착 이후 왕정 초기까지의 시대입니다. 유목민이었던 이스라엘은 가나안에 들어와 농경 사회로 체제 전환을 겪게 되면서, 성공적인 농사를 위해 가나안 원주민들의 토착 신인 '바알'에게 비를 빌어야 한다는 강한 종교적, 실용주의적 압력에 직면합니다.</p>
+                            
+                            <h3>2. 등장하는 주요 이방신</h3>
+                            <ul>
+                                <li><strong>바알 (Baal)</strong>: 비, 폭풍, 농사의 풍요를 주관하는 신 ('주인', '남편').</li>
+                                <li><strong>아스다롯 (Ashtaroth)</strong>: 전쟁과 성적 풍요의 여신. 바알의 배우자.</li>
+                                <li><strong>다곤 (Dagon)</strong>: 블레셋(Philistines)의 수호신이자 농경/곡물의 신.</li>
+                            </ul>
+
+                            <blockquote>"블레셋 사람들이 하나님의 궤를 가져다가 다곤의 신전에 들어가서 다곤 곁에 두었더니... 다곤이 여호와의 궤 앞에서 엎드러져 그 얼굴이 땅에 닿았는지라" (사무엘상 5:2-3)</blockquote>
+                            
+                            <h3>4. 역사 및 고고학적 교차 검증</h3>
+                            <p><strong>우가릿 문서:</strong> 1929년 시리아 라스 샴라에서 발견된 이 문서들은 바알 신앙의 상세한 실체(바알 사이클)를 적나라하게 폭로합니다. 가나안 사람들은 비와 농사의 생명력을 깨우기 위해 종교적 음란 제의를 행했습니다.<br>
+                            <strong>다곤:</strong> 과거에는 인어 형태의 물고기 신으로 오해받았으나 현대 설형문자 해독 연구에 따르면 원래 대중적인 농경과 곡물의 신(Dagan)이었습니다.</p>
+                            
+                            <h3>5. 신학적 및 구속사적 의미</h3>
+                            <p>이스라엘의 비극은 생존(풍요)과 쾌락을 핑계로 실용주의적 종교를 수용한 데서 비롯되었습니다. 그러나 다곤 신전 사건은 인간의 군사적 패배 속에서도 하나님 자신은 결코 패배하지 않으시는 역사와 우주의 완전한 주권자이심을 증명합니다.</p>
+                        </div>
+                        <div class="content-image-wrapper">
+                            <img src="assets/dagon_1778330458623.png" alt="다곤 (Dagon) 신상 이미지" class="content-image">
+                            <div class="image-caption">블레셋의 국가신이자 곡물의 신이었던 다곤(Dagon)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="accordion-item theme-bronze">
+                <button class="accordion-header">
+                    <div class="chapter-info">
+                        <span class="chapter-number">Chapter 4</span>
+                        <h2 class="chapter-title">분열왕국 시대 ~ 앗수르/바벨론 압박기 : 산당의 타락과 종교 혼합주의</h2>
+                    </div>
+                    <div class="icon-toggle">+</div>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h3>1. 시대적, 지리적 배경</h3>
+                            <p>기원전 930년부터 예루살렘이 함락되는 586년까지의 시기입니다. 앗수르와 바벨론 제국이 서진하며 군사적 압박을 가해오는 혼란 속에서 남유다와 북이스라엘 내부의 혼합주의 종교 숭배가 극에 달했습니다. 왕실과 성전 내부까지 이방의 신상들이 버젓이 침투하였습니다.</p>
+                            
+                            <h3>2. 등장하는 주요 이방신</h3>
+                            <ul>
+                                <li><strong>아세라 (Asherah)</strong>: 가나안 모신으로 산당 숭배의 핵심 상징물이자 야훼 신앙과 혼합 숭배됨.</li>
+                                <li><strong>담무스 (Tammuz)</strong>: 수메르-아카드의 '두무지'에서 유래한 식생과 목축의 신.</li>
+                                <li><strong>하늘의 여왕 (Queen of Heaven)</strong>: 메소포타미아 이슈타르 혹은 아스타르테 계열의 광역 여신.</li>
+                                <li><strong>니스록 (Nisroch)</strong>: 앗수르 왕 산헤립이 살해될 때 경배하고 있던 앗수르 왕실 수호신.</li>
+                            </ul>
+
+                            <blockquote>"그가 또 나를 데리고 여호와의 전으로 들어가는 북문에 이르시기로 보니 거기에 여인들이 앉아 <strong>담무스</strong>를 위하여 애곡하더라" (에스겔 8:14)</blockquote>
+                            
+                            <h3>4. 역사 및 고고학적 교차 검증</h3>
+                            <p>기원전 9세기 후반의 <strong>'쿤틸렛 아즈루드 비문(Kuntillet Ajrud)'</strong>에서 "사마리아의 야훼와 그의 아세라"라는 충격적인 명문이 발견되었습니다. 이는 당시 이스라엘 민중 종교가 유일신 신앙에서 벗어나 야훼의 배우자로 아세라 여신을 숭배했을 만큼 극도로 타락한 혼합주의를 겪었음을 여실히 고발합니다. 담무스 숭배 역시 고대 바벨론의 식생 순환 제의와 정확히 평행합니다.</p>
+                            
+                            <h3>5. 신학적 및 구속사적 의미</h3>
+                            <p>거룩해야 할 성전 중심부마저 제국주의 종교와 실용주의 다신교의 혼합 제의로 뒤덮인 모습은 유다 왕국의 영적 멸망을 상징합니다. 선지자들은 이러한 혼합주의를 신앙의 간음으로 선언하며 종교 개혁을 거듭 외쳤습니다.</p>
+                        </div>
+                        <div class="content-image-wrapper">
+                            <img src="assets/tammuz_asherah.png" alt="아세라 담무스 이미지" class="content-image">
+                            <div class="image-caption">고대 가나안 산당 숭배와 담무스 애곡 제의의 시각화</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 5 -->
+            <div class="accordion-item theme-lapis">
+                <button class="accordion-header">
+                    <div class="chapter-info">
+                        <span class="chapter-number">Chapter 5</span>
+                        <h2 class="chapter-title">바벨론 포로기 ~ 페르시아기 : 거대 제국의 국가신들과의 대면</h2>
+                    </div>
+                    <div class="icon-toggle">+</div>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h3>1. 시대적, 지리적 배경</h3>
+                            <p>기원전 6세기 예루살렘 멸망 이후 유다 백성들이 바벨론 제국의 심장부로 끌려가 생활하던 포로기와 이후 페르시아 제국 발흥기입니다. 바벨론은 거대한 신전, 지구라트, 현란한 국가 대제전을 갖춘 다신교 제국이었으며 이스라엘은 영적 압박감을 느끼게 되었습니다.</p>
+                            
+                            <h3>2. 등장하는 주요 이방신</h3>
+                            <ul>
+                                <li><strong>벨 (Bel)</strong>: 바벨론 최고 수호신이자 국가신인 '마르둑(Marduk)'의 경칭.</li>
+                                <li><strong>느보 (Nebo)</strong>: 지혜, 문예, 서기의 신이자 마르둑의 아들인 '나부(Nabu)'.</li>
+                            </ul>
+
+                            <blockquote>"<strong>벨</strong>은 엎드러졌고 <strong>느보</strong>는 구부러졌도다 그들의 우상들은 짐승과 가축에게 실렸으니 너희가 떠메고 다니던 그것들이 피곤한 짐승의 무거운 짐이 되었도다" (이사야 46:1)</blockquote>
+                            
+                            <h3>4. 역사 및 고고학적 교차 검증</h3>
+                            <p>바벨론 설형문자 토판과 비문들은 최고신 마르둑(벨)과 그의 신전 에사길라(Esagila), 그리고 지혜의 신 나부(느보)의 존재를 강력하게 매칭해 줍니다. 또한 당대 바벨론 지배층의 이름(예: 느부갓네살(Nabu-kudurri-usur), 벨사살(Bel-sar-usur))에 이 신들의 이름이 직접 포함된 인명 결합어 형태가 풍부히 고증되어 역사성을 입증합니다.</p>
+                            
+                            <h3>5. 신학적 및 구속사적 의미</h3>
+                            <p>제국의 거대 문명과 찬란한 종교의 겉모습에 짓눌린 포로기의 백성들에게 선지자는 단언합니다. 제국의 위대한 주신들로 통하던 벨과 느보는 결국 심판 아래 쓰러질 수밖에 없으며 가축의 등에 업힌 '무거운 짐'에 불과하고, 이스라엘의 보이지 않는 하나님만이 역사를 주관하고 백성을 업어 살리시는 참 신이심을 선포합니다.</p>
+                        </div>
+                        <div class="content-image-wrapper">
+                            <img src="assets/bel_nebo.png" alt="벨 느보 이미지" class="content-image">
+                            <div class="image-caption">바벨론의 대수호신 마르둑(Bel)과 나부(Nebo)의 상징 지구라트</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 6 -->
+            <div class="accordion-item theme-silver">
+                <button class="accordion-header">
+                    <div class="chapter-info">
+                        <span class="chapter-number">Chapter 6</span>
+                        <h2 class="chapter-title">신약 헬레니즘 ~ 로마 초기 : 그리스-로마 도시의 다신교와 복음의 충돌</h2>
+                    </div>
+                    <div class="icon-toggle">+</div>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h3>1. 시대적, 지리적 배경</h3>
+                            <p>예수 그리스도 시대부터 기원후 1세기 사도 바울의 전도 여행기까지입니다. 로마 제국의 평화(Pax Romana) 아래서 헬레니즘 철학과 그리스-로마 다신교 문화가 지중해 전역의 도시 국가들을 지배했습니다. 기독교 복음은 이 다문화·다신교적인 도시 한복판으로 뚫고 들어갔습니다.</p>
+                            
+                            <h3>2. 등장하는 주요 이방신 및 종교 현상</h3>
+                            <ul>
+                                <li><strong>에베소의 아르테미스 (Artemis)</strong>: 소아시아의 풍요와 도시 상권을 지배하던 대표 여신.</li>
+                                <li><strong>제우스와 헤르메스 (Zeus & Hermes)</strong>: 루스드라에서 기적을 행한 바나바와 바울을 신격화하여 호칭함.</li>
+                                <li><strong>알지 못하는 신 (Unknown God)</strong>: 아테네 아레오바고에서 사도 바울이 복음 전파의 접점으로 활용한 미지의 존재를 위한 제단.</li>
+                                <li><strong>디오스쿠로이 (Dioscuri)</strong>: 제우스의 쌍둥이 아들로서 항해의 수호자. 바울의 배 머리 장식에 쓰임.</li>
+                            </ul>
+
+                            <blockquote>"크다 에베소 사람의 <strong>아르테미스</strong>여 하니 온 시내가 요란하여... 연극장으로 달려 들어가는지라" (사도행전 19:28-29)</blockquote>
+                            
+                            <h3>4. 역사 및 고고학적 교차 검증</h3>
+                            <p>에베소 고고학 발굴을 통해 고대 세계 7대 불가사의 중 하나였던 아르테미스 대신전의 거대한 규모와 다유방을 가진 아르테미스 신상의 실체가 완전히 규명되었습니다. 특히 에베소 전역에서 아르테미스 숭배와 관련된 은제 신전 모형 제작 길드 비문이 다수 발굴되어 사도행전 19장의 은장색 데메드리오 소동 사건이 당대 도시 상업권 구조와 완전히 일치하는 역사적 팩트임이 밝혀졌습니다.</p>
+                            
+                            <h3>5. 신학적 및 구속사적 의미</h3>
+                            <p>복음은 단순한 개인의 내면 수양이 아니라, 도시의 우상 숭배 체제 및 그와 얽힌 경제적 부패망과 직접 격돌하는 영적 세력이었습니다. 인간이 손으로 만든 우상은 아무것도 아님을 드러내며, 세상 학문과 미신을 넘어선 부활하신 예수를 만유의 주로 선포했습니다.</p>
+                        </div>
+                        <div class="content-image-wrapper">
+                            <img src="assets/artemis_ephesus.png" alt="에베소 아르테미스 이미지" class="content-image">
+                            <div class="image-caption">에베소의 중심 아르테미스 대신전과 풍요의 여신상</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 7 -->
+            <div class="accordion-item theme-crimson">
+                <button class="accordion-header">
+                    <div class="chapter-info">
+                        <span class="chapter-number">Chapter 7</span>
+                        <h2 class="chapter-title">신약 계시록 시대 : 제국주의 황제 숭배 체제에 대한 저항</h2>
+                    </div>
+                    <div class="icon-toggle">+</div>
+                </button>
+                <div class="accordion-content">
+                    <div class="content-inner">
+                        <div class="content-text">
+                            <h3>1. 시대적, 지리적 배경</h3>
+                            <p>기원후 1세기 후반, 특히 도미티아누스 황제 시기입니다. 로마 제국은 소아시아(터키 서부) 지역을 중심으로 자신들의 정치적 주권과 동맹을 공고히 하기 위해 로마 황제 숭배(Imperial Cult)를 대대적으로 강조하였습니다. 이는 제국 내 시민이자 상인이 되기 위한 필수 통과의례였습니다.</p>
+                            
+                            <h3>2. 등장하는 주요 이방 숭배</h3>
+                            <ul>
+                                <li><strong>로마 황제 숭배 (Imperial Cult)</strong>: 살아있는 황제를 주와 신(Dominus et Deus)으로 부르며 향을 피우는 종교적 충성 의례.</li>
+                                <li><strong>사탄의 권좌 (Seat of Satan)</strong>: 버가모 교회 편지(계 2:13)에 언급된 곳으로, 버가모의 거대한 제우스 제단 혹은 황제 숭배 최초의 주 성전을 상징함.</li>
+                            </ul>
+
+                            <blockquote>"네가 어디에 사는지를 내가 아노니 거기는 <strong>사탄의 권좌</strong>가 있는 데라... 내 충성된 증인 안디바가 너희 가운데 곧 사탄이 사는 곳에서 죽임을 당할 때에도 나를 믿는 믿음을 저버리지 아니하였도다" (요한계시록 2:13)</blockquote>
+                            
+                            <h3>4. 역사 및 고고학적 교차 검증</h3>
+                            <p>소아시아의 거점 도시들(버가모, 에베소, 서머나)은 로마 황제 숭배의 명예적 수호 도시인 '네오코로스(Neokoros)' 타이틀을 쟁취하기 위해 앞다투어 황제 신전을 건립했습니다. 고고학 발굴을 통해 드러난 대형 황제 신전 비문들과 로마 황제를 신격화한 신전 주화들이 요한계시록에 묘사된 짐승 숭배 및 경제적 제재(매매 금지)의 긴박한 직접적 정황을 확고하게 증명해 줍니다.</p>
+                            
+                            <h3>5. 신학적 및 구속사적 의미</h3>
+                            <p>요한계시록의 묵시는 세속의 절대 제국과 종교적 결탁(황제 숭배)에 굴하지 않고 오직 주 예수만을 따르는 성도들에게 승리의 보장을 제공합니다. 제국이 아무리 위협하고 경제적으로 핍박할지라도 만왕의 왕, 만주의 주는 어린 양 예수 한 분뿐이심을 역사적 결말로 선포합니다.</p>
+                        </div>
+                        <div class="content-image-wrapper">
+                            <img src="assets/roman_imperial_cult.png" alt="로마 황제 숭배 이미지" class="content-image">
+                            <div class="image-caption">로마 황제 도미티아누스의 거대 석상과 불타는 신전 제단</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 2. 이방신 사전 탭 ==================== -->
+        <div id="deity-db" class="tab-content">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label class="filter-label" for="filter-era">연대 구분</label>
+                    <select id="filter-era" class="filter-select">
+                        <option value="all">전체보기</option>
+                        <option value="구약">구약성경 (OT)</option>
+                        <option value="신약">신약성경 (NT)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label" for="filter-strength">역사적 매칭 신뢰도</label>
+                    <select id="filter-strength" class="filter-select">
+                        <option value="all">전체보기</option>
+                        <option value="very-strong">매우 강함 (Very Strong)</option>
+                        <option value="strong">강함/논쟁 있음 (Strong)</option>
+                        <option value="debatable">가장 논쟁적임 (Debatable)</option>
+                    </select>
+                </div>
+                <div class="deity-count">검색 결과: <span id="count-num">15</span>개 이방신</div>
+            </div>
+
+            <div class="deity-grid">
+                <!-- 1. 바알 -->
+                <div class="deity-card very-strong" data-era="구약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 가나안</span>
+                            <h3 class="deity-name">바알 (Baal)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">가나안의 폭풍, 비, 풍요를 주관하는 핵심 남신입니다. 농경 사회에 들어선 이스라엘 백성들을 유혹하여 실용주의적 풍요 신앙으로 타락시킨 핵심 우상입니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">우가릿 문서(Ras Shamra)의 '바알 사이클', 페니키아-레반트 전역 비문</span>
+                </div>
+
+                <!-- 2. 아세라 -->
+                <div class="deity-card very-strong" data-era="구약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 가나안</span>
+                            <h3 class="deity-name">아세라 (Asherah)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">가나안의 최고 모신(Mother Goddess)이자 엘(El)의 배우자입니다. 나무 조각상이나 수목의 형태로 성경에 자주 등장하며, 이스라엘 내에서 야훼 신앙과 가장 빈번히 혼합 숭배되었습니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">우가릿 신화 토판의 '아티랏(Athirat)', 쿤틸렛 아즈루드 비문 명문</span>
+                </div>
+
+                <!-- 3. 아스다롯 -->
+                <div class="deity-card very-strong" data-era="구약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 페니키아</span>
+                            <h3 class="deity-name">아스다롯 (Astarte)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">시돈과 페니키아의 풍요, 사랑, 전쟁의 여신입니다. 앗수르-바벨론의 이슈타르에 대응하며, 성경에서는 이스라엘을 음란한 성적 제의로 타락시켰던 대표 우상 여신으로 묘사됩니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">페니키아 비문, 우가릿 문서 아스타르트 전승, 고대 이집트 외교 비문</span>
+                </div>
+
+                <!-- 4. 그모스 -->
+                <div class="deity-card very-strong" data-era="구약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 모압</span>
+                            <h3 class="deity-name">그모스 (Chemosh)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">모압 족속의 민족 수호신입니다. 성경은 모압을 '그모스의 백성'이라 지칭합니다. 영토 정복과 전쟁의 승리를 모압 왕에게 지시하는 등 모압의 국가신 역할을 수행했습니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">기원전 840년경 모압 왕 메사가 건립한 '메사 석비(Mesha Stele)'</span>
+                </div>
+
+                <!-- 5. 담무스 -->
+                <div class="deity-card very-strong" data-era="구약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 메소포타미아</span>
+                            <h3 class="deity-name">담무스 (Tammuz)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">수메르-아카드 신화의 식생 및 농경의 주신 '두무지'에 기원을 둔 신입니다. 그의 죽음과 겨울철 식물의 소멸을 애곡하고 봄날의 부활을 기대하는 제의가 유다 말기 성전 문까지 침투했습니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">수메르 점토판의 두무지 신화 서사시, 고대 바벨론 종교 의례서</span>
+                </div>
+
+                <!-- 6. 벨 / 느보 -->
+                <div class="deity-card very-strong" data-era="구약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 바벨론</span>
+                            <h3 class="deity-name">벨 / 느보 (Bel/Nebo)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">각각 바벨론 최고 국가신 마르둑(Marduk)의 별칭인 벨과, 지혜 및 학문의 신 나부(Nabu)에 직접 대응됩니다. 포로기 선지자 서사에서 제국 멸망의 상징으로 등장합니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">에누마 엘리쉬(바벨론 창조 서사시), 느부갓네살 등 당대 국가 수뇌부 인명 고증</span>
+                </div>
+
+                <!-- 7. 에베소 아르테미스 -->
+                <div class="deity-card very-strong" data-era="신약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">신약 · 그리스/로마</span>
+                            <h3 class="deity-name">아르테미스 (Artemis)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">본래 수렵과 정결의 여신이나 에베소에서는 다유방을 지닌 풍요의 대지모신 형태로 융합 숭배되었습니다. 에베소 상권을 장악한 강력한 상업주의적 이데올로기와 깊이 결탁되어 있었습니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">에베소 아르테미스 신전 발굴 명문, 고대 지중해권 은제 신상 제조 길드 기록</span>
+                </div>
+
+                <!-- 8. 디오스쿠로이 -->
+                <div class="deity-card very-strong" data-era="신약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">신약 · 그리스/로마</span>
+                            <h3 class="deity-name">디오스쿠로이 (Dioscuri)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">그리스 신화 제우스의 쌍둥이 아들(카스토르와 폴룩스)입니다. 고대 항해사들의 수호신이었으며, 사도 바울이 멜리데(몰타)에서 로마로 압송될 때 승선했던 알렉산드리아 배의 선수상이었습니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">헬레니즘 해양 고고학 유물(선박 머리 장식 조각상), 폼페이 해상 벽화</span>
+                </div>
+
+                <!-- 9. 로마 황제 숭배 -->
+                <div class="deity-card very-strong" data-era="신약" data-strength="very-strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">신약 · 로마 제국</span>
+                            <h3 class="deity-name">황제 숭배 (Imperial Cult)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-very-strong">매우 강함</span>
+                    </div>
+                    <p class="deity-desc">살아있는 로마 황제를 주와 신으로 모시는 정치적이고 종교적인 결탁 체제입니다. 요한계시록의 주요 핍박 정황인 짐승의 표와 숭배 강요의 핵심 역사적 배경입니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">소아시아 로마 황제 수호도시(Neokoros) 건립 비문, 황제 신격화 동전</span>
+                </div>
+
+                <!-- 10. 다곤 -->
+                <div class="deity-card strong" data-era="구약" data-strength="strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 블레셋</span>
+                            <h3 class="deity-name">다곤 (Dagon)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-strong">강함 / 논쟁 있음</span>
+                    </div>
+                    <p class="deity-desc">시리아권에 널리 퍼져 있던 대중적인 곡물과 풍요의 신(Dagan)에 기원을 둡니다. 성경에서는 블레셋인들이 수용한 핵심 국가신으로 나타나나, 고고학적으로 독점 수호신 지위였는지는 논쟁적입니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">마리(Mari) 및 에블라(Ebla) 토판 비문, 라스 샴라 제사 목록</span>
+                </div>
+
+                <!-- 11. 밀곰 -->
+                <div class="deity-card strong" data-era="구약" data-strength="strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 암몬</span>
+                            <h3 class="deity-name">밀곰 (Milcom)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-strong">강함 / 논쟁 있음</span>
+                    </div>
+                    <p class="deity-desc">암몬 족속의 국가 수호신입니다. 솔로몬 왕의 말년 혼합 종교 개방 정책으로 예루살렘 동쪽 산에 신당이 지어졌습니다. 몰렉과의 음운/역사적 관계는 아직 완전한 학계 합의가 없습니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">암몬 요르단 지역 출토 명문 인장 및 암몬인 인명 결합어 실증 자료</span>
+                </div>
+
+                <!-- 12. 림몬 -->
+                <div class="deity-card strong" data-era="구약" data-strength="strong">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 아람(다메섹)</span>
+                            <h3 class="deity-name">림몬 (Rimmon)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-strong">강함 / 논쟁 있음</span>
+                    </div>
+                    <p class="deity-desc">다메섹을 중심으로 시리아군 지휘관 나아만이 섬기던 폭풍의 신입니다. 본래 근동 전역의 위력적인 폭풍신인 하닷(Hadad)의 지역적 별칭 혹은 속성명으로 해석됩니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">시리아 다메섹 하닷-림몬 신전 유적 비문 명문 파편</span>
+                </div>
+
+                <!-- 13. 몰렉 -->
+                <div class="deity-card debatable" data-era="구약" data-strength="debatable">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 암몬/가나안</span>
+                            <h3 class="deity-name">몰렉 (Molech)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-debatable">가장 논쟁적임</span>
+                    </div>
+                    <p class="deity-desc">자녀를 불 가운데로 지나게 하는 인신 제사를 요구한 가증한 신입니다. 그러나 현대 고고학계 일각에서는 고유의 신 이름이 아니라 페니키아-카르타고권의 '인신 제사 의례 명칭(molk)'일 가능성이 제기됩니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">카르타고 토펫(Tophet) 아동 희생 유골 무덤 및 포에니 제사 명문 비각</span>
+                </div>
+
+                <!-- 14. 하늘의 여왕 -->
+                <div class="deity-card debatable" data-era="구약" data-strength="debatable">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 혼합 숭배</span>
+                            <h3 class="deity-name">하늘의 여왕</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-debatable">가장 논쟁적임</span>
+                    </div>
+                    <p class="deity-desc">유다 왕국 말기 여인들이 과자를 만들어 제의를 드리던 천상 여신입니다. 메소포타미아의 여신 이슈타르 혹은 페니키아의 아스다롯을 가리키는 복합적이고 광역적인 여신 칭호로 추정됩니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">바벨론 이슈타르 신전의 명문 '하늘의 여주인(Queen of Heaven) 이슈타르'</span>
+                </div>
+
+                <!-- 15. 니스록 -->
+                <div class="deity-card debatable" data-era="구약" data-strength="debatable">
+                    <div class="deity-card-header">
+                        <div class="deity-meta">
+                            <span class="deity-era">구약 · 앗수르</span>
+                            <h3 class="deity-name">니스록 (Nisroch)</h3>
+                        </div>
+                        <span class="deity-strength-badge badge-debatable">가장 논쟁적임</span>
+                    </div>
+                    <p class="deity-desc">앗수르의 왕 산헤립이 살해될 때 엎드려 경배하던 니네베 신전의 신입니다. 그러나 성경 밖 앗수르 문헌에 이 발음의 신은 없으며, 아시리아 폭풍/전쟁의 신 니누르타(Ninurta)의 오기일 가능성이 유력합니다.</p>
+                    <div class="deity-source-label">주요 교차 검증 사료</div>
+                    <span class="deity-sources">니네베 출토 니누르타 신전 비각 및 부조, 서기/사본 전승 과정의 철자 변형 고증</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 3. 고고학 사료실 탭 ==================== -->
+        <div id="sources" class="tab-content">
+            <div class="source-grid">
+                <!-- 사료 1 -->
+                <div class="source-card">
+                    <div class="source-title-group">
+                        <h3 class="source-title">우가릿 토판 문서 (Ras Shamra Tablets)</h3>
+                        <span class="source-date">대략 BC 14 ~ 12세기</span>
+                    </div>
+                    <div class="source-meta-info">
+                        <p><strong>발굴 장소:</strong> 시리아 북부 라스 샴라 (고대 우가릿 왕국)</p>
+                        <p><strong>해당 이방신:</strong> 바알, 아세라, 엘, 아나트 등</p>
+                    </div>
+                    <p class="source-desc">1929년 프랑스 발굴단에 의해 빛을 본 대규모 쐐기문자 점토판 무리입니다. 성경 밖에서 가나안의 신화 체계와 제사 방식(바알 사이클 등)을 가장 직접적으로 고증해 주는 역사적 보고입니다. 성경에 나오는 가나안 제의의 타락성과 성격, 그리고 야훼 신앙과 격돌한 종교 체계의 배경을 이해하는 절대적인 자료입니다.</p>
+                </div>
+
+                <!-- 사료 2 -->
+                <div class="source-card">
+                    <div class="source-title-group">
+                        <h3 class="source-title">메사 왕의 석비 (Mesha Stele)</h3>
+                        <span class="source-date">대략 BC 840년경 제작</span>
+                    </div>
+                    <div class="source-meta-info">
+                        <p><strong>발굴 장소:</strong> 고대 모압의 수도 디본 (현 요르단 디반)</p>
+                        <p><strong>해당 이방신:</strong> 그모스 (Chemosh)</p>
+                    </div>
+                    <p class="source-desc">모압 왕 메사가 오므리 왕조 이스라엘의 오랜 압제로부터 벗어나 영토를 회복한 일을 기념하여 검은 현무암에 모압 문자로 기록해 놓은 승전비입니다. 모압의 국가신인 <strong>그모스(Chemosh)</strong>의 이름이 생생히 명시되어 있어, 열왕기하 3장의 모압-이스라엘 전쟁 배경을 성경 밖 역사와 고고학으로 완벽하게 교차 증명해 주는 대표적 일차 사료입니다.</p>
+                </div>
+
+                <!-- 사료 3 -->
+                <div class="source-card">
+                    <div class="source-title-group">
+                        <h3 class="source-title">쿤틸렛 아즈루드 비문 (Kuntillet Ajrud)</h3>
+                        <span class="source-date">기원전 9세기 후반 ~ 8세기 초반</span>
+                    </div>
+                    <div class="source-meta-info">
+                        <p><strong>발굴 장소:</strong> 시나이반도 동북부 고대 초소/대피소 유적</p>
+                        <p><strong>해당 이방신:</strong> 아세라 (Asherah)</p>
+                    </div>
+                    <p class="source-desc">여행자의 임시 거처 혹은 고대 요새지로 추정되는 지역의 거대한 점토 항아리 표면에서 발굴된 히브리어 낙서성 축원문입니다. 여기에 <strong>"사마리아의 야훼와 그의 아세라(Yahweh of Samaria and his Asherah)의 이름으로 축복한다"</strong>는 구절이 선명히 발견되어, 성경 선지자들이 극도로 경계했던 이스라엘 내부의 혼합주의 종교의 충격적 실체를 역사적으로 증명해 주었습니다.</p>
+                </div>
+
+                <!-- 사료 4 -->
+                <div class="source-card">
+                    <div class="source-title-group">
+                        <h3 class="source-title">에베소 아르테미스 명문 & 은장색 길드 비문</h3>
+                        <span class="source-date">BC 6세기 ~ AD 2세기 누적</span>
+                    </div>
+                    <div class="source-meta-info">
+                        <p><strong>발굴 장소:</strong> 터키 에베소 대극장 및 도로 유적</p>
+                        <p><strong>해당 이방신:</strong> 에베소의 아르테미스 여신</p>
+                    </div>
+                    <p class="source-desc">고대 세계 7대 불가사의 중 하나인 에베소 아르테미스 대신전 유적과 인근 대형 연극장에서 발굴된 축제 공문과 기여금 영수 비문들입니다. 사도행전 19장에서 사도 바울이 복음을 전파하자 여신상의 모형을 만들어 팔던 은장색 데메드리오와 동업자들이 길드 소요 사태를 일으킨 사건이 당대 에베소 시의 실제 경제적·종교적 기득권망의 진실한 반영이었음을 역사적으로 입증합니다.</p>
+                </div>
+
+                <!-- 사료 5 -->
+                <div class="source-card">
+                    <div class="source-title-group">
+                        <h3 class="source-title">소아시아 황제 신전 비문 & 제국 동전</h3>
+                        <span class="source-date">AD 1세기 ~ 2세기 전성</span>
+                    </div>
+                    <div class="source-meta-info">
+                        <p><strong>발굴 장소:</strong> 소아시아 서부 일곱 교회 수호지 (버가모, 서머나 등)</p>
+                        <p><strong>해당 이방신:</strong> 로마 황제 숭배 (Imperial Cult)</p>
+                    </div>
+                    <p class="source-desc">로마 황제를 살아있는 수호신으로 추대하며 신전 건립 권한을 입증해 준 명문 비각과, 황제를 신격화하여 향을 피우게 하던 제의용 화로 점토판 등입니다. 황제의 얼굴이 찍힌 로마 동전 숭배의 직접적 실태는 요한계시록의 ‘짐승의 우상에게 절하는 행위’ 및 성도들이 당대 사회 경제권에서 배제되었던 박해의 뼈아픈 실상을 보여주는 최고의 고고학 증거입니다.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 성경 이방신 리서치 아카이브. Generated by Antigravity Agent. All Research Data Integrated.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
