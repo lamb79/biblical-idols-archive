@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성경 우상 리서치 아카이브</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Space+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="홈으로">
+      <span class="brand-mark"></span>
+      <span>성경 우상 리서치 아카이브</span>
+    </a>
+    <nav class="nav-links" aria-label="주요 탐색">
+      <a href="#timeline">연대기</a>
+      <a href="#deities">우상 사전</a>
+      <a href="#sources">고고학 자료</a>
+    </nav>
+    <a class="ghost-button" href="#query">자료 탐색</a>
+  </header>
+
+  <main id="top">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-ring" aria-hidden="true"></div>
+      <p class="eyebrow">BIBLICAL IDOLS / FIELD INDEX</p>
+      <h1 id="hero-title">고대 종교 세계를 성경 본문 안에서 추적합니다</h1>
+      <p class="hero-copy">
+        창세기부터 요한계시록까지 등장하는 이방 신, 우상 숭배, 제국 종교의 흔적을
+        시대별 맥락과 고고학 자료로 정리한 어두운 연구형 홈페이지입니다.
+      </p>
+      <form id="query" class="search-panel" role="search">
+        <label class="sr-only" for="archive-query">자료 검색</label>
+        <input id="archive-query" type="search" placeholder="무엇을 알고 싶나요? 예: 바알, 몰렉, 에베소 아르테미스">
+        <button type="submit" aria-label="검색 실행">검색</button>
+      </form>
+      <div class="hero-metrics" aria-label="아카이브 요약">
+        <div><span>07</span><p>시대 구간</p></div>
+        <div><span>15</span><p>주요 우상</p></div>
+        <div><span>05</span><p>핵심 자료</p></div>
+      </div>
+    </section>
+
+    <section class="section-band" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-heading">
+        <p class="eyebrow">TIMELINE</p>
+        <h2 id="timeline-title">성경 시대별 우상 숭배 흐름</h2>
+        <p>각 시대의 지리, 정치, 종교 환경을 한 화면에서 빠르게 비교할 수 있도록 정리했습니다.</p>
+      </div>
+      <div class="timeline-list">
+        <article class="timeline-item is-open">
+          <button class="timeline-toggle" type="button">
+            <span>01</span>
+            <strong>창세기: 메소포타미아와 족장 시대</strong>
+            <i>+</i>
+          </button>
+          <div class="timeline-content">
+            <p>아브라함의 고향 우르와 하란은 달신 숭배와 가족 수호신 전통이 강한 지역이었습니다. 데라빔은 단순한 장식품을 넘어 가문, 상속, 종교적 보호의 의미를 함께 지녔습니다.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <button class="timeline-toggle" type="button">
+            <span>02</span>
+            <strong>출애굽기-민수기: 애굽 신들과 광야의 유혹</strong>
+            <i>+</i>
+          </button>
+          <div class="timeline-content">
+            <p>출애굽 사건은 애굽의 신적 질서를 향한 심판으로 제시됩니다. 광야에서는 금송아지, 몰렉, 바알브올처럼 주변 민족의 풍요와 권력 숭배가 반복적으로 침투합니다.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <button class="timeline-toggle" type="button">
+            <span>03</span>
+            <strong>사사기-사무엘상: 바알, 아스다롯, 다곤</strong>
+            <i>+</i>
+          </button>
+          <div class="timeline-content">
+            <p>가나안 정착 이후 이스라엘은 농경 사회의 풍요 신앙과 계속 충돌했습니다. 바알과 아스다롯, 블레셋의 다곤은 생존과 전쟁의 문제를 둘러싼 영적 경쟁자로 등장합니다.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <button class="timeline-toggle" type="button">
+            <span>04</span>
+            <strong>분열 왕국-포로기: 혼합주의의 확대</strong>
+            <i>+</i>
+          </button>
+          <div class="timeline-content">
+            <p>아세라, 담무스, 하늘의 여왕 숭배는 성전과 일상 안으로 들어온 혼합주의를 보여줍니다. 예언자들은 이를 언약 배반과 사회적 붕괴의 신호로 해석했습니다.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <button class="timeline-toggle" type="button">
+            <span>05</span>
+            <strong>바벨론-페르시아: 제국 신들의 무게</strong>
+            <i>+</i>
+          </button>
+          <div class="timeline-content">
+            <p>벨과 느보는 바벨론 제국의 권위와 지식을 상징했습니다. 포로기의 예언은 거대한 제국의 신상도 결국 짐승의 등에 실려 가는 짐에 불과하다고 선언합니다.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <button class="timeline-toggle" type="button">
+            <span>06</span>
+            <strong>신약 시대: 헬라-로마 종교와 제국 숭배</strong>
+            <i>+</i>
+          </button>
+          <div class="timeline-content">
+            <p>에베소의 아르테미스, 디오스구로이, 로마 황제 숭배는 복음이 마주한 경제적, 정치적, 종교적 압력을 보여주는 대표 사례입니다.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-band" id="deities" aria-labelledby="deities-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">DEITY DATABASE</p>
+        <h2 id="deities-title">주요 우상 사전</h2>
+      </div>
+      <div class="filter-row">
+        <button class="filter-btn is-active" type="button" data-filter="all">전체</button>
+        <button class="filter-btn" type="button" data-filter="old">구약</button>
+        <button class="filter-btn" type="button" data-filter="new">신약</button>
+      </div>
+      <div class="deity-grid">
+        <article class="deity-card" data-era="old">
+          <img src="assets/teraphim_1778330319585.png" alt="데라빔 이미지">
+          <div><p class="eyebrow">GENESIS</p><h3>데라빔</h3><p>가정 수호신이자 상속과 가문 정체성의 상징으로 이해되는 소형 우상.</p></div>
+        </article>
+        <article class="deity-card" data-era="old">
+          <img src="assets/molech_1778330364237.png" alt="몰렉 이미지">
+          <div><p class="eyebrow">WILDERNESS</p><h3>몰렉</h3><p>인신 제사 논쟁과 연결되는 암몬-가나안권의 위험한 숭배 전통.</p></div>
+        </article>
+        <article class="deity-card" data-era="old">
+          <img src="assets/dagon_1778330458623.png" alt="다곤 이미지">
+          <div><p class="eyebrow">PHILISTIA</p><h3>다곤</h3><p>블레셋의 대표 신으로, 언약궤 사건에서 무너지는 제국적 보호신.</p></div>
+        </article>
+        <article class="deity-card" data-era="old">
+          <img src="assets/tammuz_asherah.png" alt="담무스와 아세라 이미지">
+          <div><p class="eyebrow">KINGDOMS</p><h3>아세라 / 담무스</h3><p>풍요, 생명, 성전 혼합주의를 보여주는 후기 왕국 시대의 주요 사례.</p></div>
+        </article>
+        <article class="deity-card" data-era="old">
+          <img src="assets/bel_nebo.png" alt="벨과 느보 이미지">
+          <div><p class="eyebrow">BABYLON</p><h3>벨 / 느보</h3><p>바벨론 제국의 권력과 지식 질서를 대표하는 거대 도시 신앙.</p></div>
+        </article>
+        <article class="deity-card" data-era="new">
+          <img src="assets/artemis_ephesus.png" alt="에베소 아르테미스 이미지">
+          <div><p class="eyebrow">EPHESUS</p><h3>아르테미스</h3><p>신약의 선교 현장에서 경제권과 도시 정체성을 움직인 강력한 여신 숭배.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-band" id="sources" aria-labelledby="sources-title">
+      <div class="section-heading">
+        <p class="eyebrow">SOURCE MAP</p>
+        <h2 id="sources-title">본문과 교차 검증되는 자료</h2>
+        <p>성경 본문 밖에서 당시 종교 환경을 비추는 대표 자료를 간결하게 모았습니다.</p>
+      </div>
+      <div class="source-grid">
+        <article class="source-card"><span>BC 14-12C</span><h3>우가릿 문서</h3><p>바알, 아세라, 가나안 신화 구조를 이해하는 핵심 자료.</p></article>
+        <article class="source-card"><span>BC 840</span><h3>메사 석비</h3><p>모압 왕 메사와 그모스 숭배를 직접 언급하는 왕실 비문.</p></article>
+        <article class="source-card"><span>BC 9-8C</span><h3>쿤틸렛 아즈루드</h3><p>야훼 신앙과 아세라 관련 혼합주의 논쟁의 중심 자료.</p></article>
+        <article class="source-card"><span>AD 1-2C</span><h3>아시아 황제 숭배 비문</h3><p>요한계시록 배경의 정치 종교적 압력을 보여주는 흔적.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>성경 우상 리서치 아카이브</p>
+    <div>
+      <a href="#timeline">Timeline</a>
+      <a href="#deities">Database</a>
+      <a href="#sources">Sources</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
